@@ -28,6 +28,10 @@ export default class MyDocument extends Document {
               href='/favicon-96x96.png'
             />
             <link rel='manifest' href='/manifest.json' />
+            <link
+              href='https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css'
+              rel='stylesheet'
+            />
           </Head>
 
           <body>
