@@ -2,11 +2,12 @@ import { siteConfig } from './lib/site-config'
 
 export default siteConfig({
   // the site's root Notion page (required)
+
   rootNotionPageId: '2e963f3fc37c4e8c94d409a1d1318baf',
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
-  rootNotionSpaceId: null,
+  rootNotionSpaceId: 'fde5ac74eea345278f004482710e1af3',
 
   // basic site info (required)
   name: 'L_earn',
@@ -35,7 +36,7 @@ export default siteConfig({
   // whether or not redis is enabled for caching generated preview images (optional)
   // NOTE: if you enable redis, you need to set the `REDIS_HOST` and `REDIS_PASSWORD`
   // environment variables. see the readme for more info
-  isRedisEnabled: false,
+  isRedisEnabled: true,
 
   // map of notion page IDs to URL paths (optional)
   // any pages defined here will override their default URL paths
@@ -47,10 +48,13 @@ export default siteConfig({
   // }
   pageUrlOverrides: null,
 
+  pageUrlAdditions: {
+    '/the-social-audio-revolution': 'c4deaf33cc924ad7a5b9f69c6ae04a01'
+  },
+
   // whether to use the default notion navigation style or a custom one with links to
   // important pages
   // navigationStyle: 'default',
-  navigationStyle: 'custom',
   navigationLinks: [
     {
       title: 'About',
